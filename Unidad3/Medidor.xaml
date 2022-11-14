@@ -1,0 +1,30 @@
+﻿<Window x:Class="Unidad3.Medidor"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Unidad3"
+        mc:Ignorable="d"
+        Title="Medidor" Height="450" Width="800">
+    <Canvas>
+        <Ellipse  Fill="#234e79" Canvas.Left="250" Canvas.Top="50" Width="300" Height="300"></Ellipse>
+        <Path Fill="White" Data="M500 267 A126,126 0 1 0 300,267z"></Path>
+
+        <Path  Data="M310,250 Q270,180 320,120 L345,135 Q300,200 340,240z" Fill="#39aea8"></Path>
+        <Path Fill="#ffce34" Data="M320,120 345,135 Q400,80 460,140 L480,120 Q400,40 320,120"></Path>
+        <Path Fill="#e9175e" Canvas.Left="800" Data="M310,250 Q270,180 320,120 L345,135 Q300,200 340,240Z">
+            <Path.RenderTransform>
+                <ScaleTransform ScaleX="-1" ScaleY="1"></ScaleTransform>
+            </Path.RenderTransform>
+        </Path>
+
+        
+
+
+
+
+        <Ellipse Width="50" Height="50" Fill="#aaaaac" Canvas.Left="380" Canvas.Top="200"></Ellipse>
+        <Ellipse Width="35" Height="35" Fill="#4b5056" Canvas.Left="387" Canvas.Top="207"></Ellipse>
+        <Path Fill="#4b5056" Data="M405,200 460,110 425,212 Q418,200 405,200"></Path>
+    </Canvas>
+</Window>

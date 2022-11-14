@@ -1,0 +1,18 @@
+﻿<Window x:Class="Unidad2.Poker"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Unidad2"
+        mc:Ignorable="d"
+        Title="Poker" Height="450" Width="800">
+    <Canvas>
+        <Canvas.Background>
+            <VisualBrush Viewport="0,0 0.5 0.5" TileMode="FlipY" Stretch="Uniform">
+                <VisualBrush.Visual>
+                    <Path Stroke="Black" StrokeThickness="4" Data="M350,380 450,380 410,290 A80,80 0 1 0 430,150 A85,85 0 1 0 300,150 A80,80 0 1 0 320,290 L290,380Z" Fill="Black"></Path>
+                </VisualBrush.Visual>
+            </VisualBrush>
+        </Canvas.Background>
+    </Canvas>
+</Window>

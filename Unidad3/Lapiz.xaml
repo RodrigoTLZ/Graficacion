@@ -1,0 +1,16 @@
+﻿<Window x:Class="Unidad3.Lapiz"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Unidad3"
+        mc:Ignorable="d"
+        Title="Lapiz" Height="450" Width="800">
+    <Canvas>
+        <Path Canvas.Top="-100" Canvas.Left="200" Stroke="Black" StrokeThickness="3" Data="M300,120 300,330 320,380 340,330 340,70 Q320,50 300,70Z M300,330 Q320,310 340,330 M312,360 Q320,350 328,360 M300,120 Q320,114 340,120 M300,105 Q320,100 340,105 M300,100 Q320,95 340,100 M300,85 Q320,80 340,85">
+            <Path.RenderTransform>
+                <RotateTransform Angle="20"></RotateTransform>
+            </Path.RenderTransform>
+        </Path>
+    </Canvas>
+</Window>

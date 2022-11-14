@@ -1,0 +1,21 @@
+﻿<Window x:Class="_1Ejercicio.Cubiertos"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_1Ejercicio"
+        mc:Ignorable="d"
+        Title="Cubiertos" Height="450" Width="800">
+
+    <Canvas>
+        <Path Stroke="Black" StrokeThickness="4" Canvas.Left="320" Fill="Black"
+              Data="M0 80 A20, 20 0 0 1 70,90 L 70,400 A10,10 0 0 1 20,400
+              L 20,290 0,290Z "></Path>
+
+        <Path Fill="Black" Stroke="Black" Canvas.Top="20" StrokeThickness="4" 
+              Data="M250,170 250,50 A3,3 0 1 0 235,50 L235,135 210,135 L210,50 A3,3 0 1 0 195,50 
+              L195,135 L175,135 L175,50 A5,5 0 1 0 160,50 L160,135 L140,135 
+              L140,50 A5,5 0 1 0 125,50 L125,170 Q125,200 155,195 L155,370 A1,1 0 1 0 220,380 
+              L220,195 Q250,200 250,170"></Path>
+    </Canvas>
+</Window>

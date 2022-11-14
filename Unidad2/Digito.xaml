@@ -1,0 +1,74 @@
+﻿<Window x:Class="Unidad2.Digito"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Unidad2"
+        mc:Ignorable="d"
+        Title="Digito" Height="550" Width="800">
+    <Canvas>
+        <Path Data="M310,30 490,30 520,60 490,90 310,90 285,60Z">
+            <Path.Fill>
+                <LinearGradientBrush StartPoint="1,0" EndPoint="1,1">
+                    <GradientStop Color="Red" Offset="0.40"></GradientStop>
+                    <GradientStop Color="Black" Offset="1.50"></GradientStop>
+                </LinearGradientBrush>
+            </Path.Fill>
+            <Path.BitmapEffect>
+                <DropShadowBitmapEffect Color="RosyBrown" ShadowDepth="5" Softness="5" Opacity="0.50" Direction="250"></DropShadowBitmapEffect>
+            </Path.BitmapEffect>
+        </Path>
+        <Path Data="M490,95 490,220 525,250 555,220 555,95 525,65Z">
+            <Path.Fill>
+                <LinearGradientBrush StartPoint="1,0" EndPoint="0,0">
+                    <GradientStop Color="Red" Offset="0.40"></GradientStop>
+                    <GradientStop Color="Black" Offset="1.50"></GradientStop>
+                </LinearGradientBrush>
+            </Path.Fill>
+            <Path.BitmapEffect>
+                <DropShadowBitmapEffect Color="RosyBrown" ShadowDepth="5" Softness="5" Opacity="0.50" Direction="130"></DropShadowBitmapEffect>
+            </Path.BitmapEffect>
+        </Path>
+        <Path Canvas.Left="-245" Opacity="0.20" Fill="Red" Data="M490,95 490,220 525,250 555,220 555,95 525,65Z"></Path>
+        <Path Canvas.Top="200" Data="M310,30 490,30 520,60 490,90 310,90 285,60Z">
+            <Path.Fill>
+                <LinearGradientBrush StartPoint="1,0" EndPoint="1,1">
+                    <GradientStop Color="Red" Offset="0.40"></GradientStop>
+                    <GradientStop Color="Black" Offset="1.50"></GradientStop>
+                </LinearGradientBrush>
+            </Path.Fill>
+            <Path.BitmapEffect>
+                <DropShadowBitmapEffect Color="RosyBrown" ShadowDepth="5" Softness="5" Opacity="0.50" Direction="250"></DropShadowBitmapEffect>
+            </Path.BitmapEffect>
+        </Path>
+        <Path Canvas.Top="200" Fill="Red" Opacity="0.20" Data="M490,95 490,220 525,250 555,220 555,95 525,65Z"></Path>
+        <Path Canvas.Top="400" Data="M310,30 490,30 520,60 490,90 310,90 285,60Z">
+            <Path.Fill>
+                <LinearGradientBrush StartPoint="1,0" EndPoint="1,1">
+                    <GradientStop Color="Red" Offset="0.40"></GradientStop>
+                    <GradientStop Color="Black" Offset="1.50"></GradientStop>
+                </LinearGradientBrush>
+            </Path.Fill>
+            <Path.BitmapEffect>
+                <DropShadowBitmapEffect Color="RosyBrown" ShadowDepth="5" Softness="5" Opacity="0.50" Direction="250"></DropShadowBitmapEffect>
+            </Path.BitmapEffect>
+        </Path>
+        <Path Canvas.Left="-245" Canvas.Top="200" Data="M490,95 490,220 525,250 555,220 555,95 525,65Z">
+            <Path.Fill>
+                <LinearGradientBrush StartPoint="1,0" EndPoint="0,0">
+                    <GradientStop Color="Red" Offset="0.40"></GradientStop>
+                    <GradientStop Color="Black" Offset="1.50"></GradientStop>
+                </LinearGradientBrush>
+            </Path.Fill>
+            <Path.BitmapEffect>
+                <DropShadowBitmapEffect Color="RosyBrown" ShadowDepth="5" Softness="5" Opacity="0.50" Direction="100"></DropShadowBitmapEffect>
+            </Path.BitmapEffect>
+        </Path>
+
+
+
+
+
+
+    </Canvas>
+</Window>

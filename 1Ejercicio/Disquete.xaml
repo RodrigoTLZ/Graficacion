@@ -1,0 +1,20 @@
+﻿<Window x:Class="_1Ejercicio.Disquete"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_1Ejercicio"
+        mc:Ignorable="d"
+        Title="Disquete" Height="450" Width="800">
+    <Canvas>
+        <Path Stroke="Black" Canvas.Left="150" Canvas.Top="150" StrokeThickness="3" Fill="Black" Data="M10,10 200,10 220,35 220,200 10,200 10,10"></Path>
+        <Path Stroke="Gray" Canvas.Left="150" Canvas.Top="150" StrokeThickness="3" Data="M50,10 50,90 170,90 170,10" Fill="Gray"></Path>
+        <Rectangle Stroke="Black" Canvas.Left="275" Canvas.Top="175" StrokeThickness="3" Fill="Black" Height="55" Width="30" RadiusX="2" RadiusY="2"></Rectangle>
+        <Path Stroke="White" Canvas.Top="150" Canvas.Left="150" StrokeThickness="3" Fill="White" Data="M40,105 175,105 175,170 40,170 40,105"></Path>
+        <Path Stroke="Red" Canvas.Top="150" Canvas.Left="150" StrokeThickness="3" Data="M39,170 175,170 175,185 39,185 39,170" Fill="Red"></Path>
+        <TextBlock Canvas.Top="275" Canvas.Left="210" FontWeight="Bold" Foreground="Red" FontSize="16">Informacion</TextBlock>
+        <TextBlock Canvas.Top="293" Canvas.Left="210" FontWeight="Bold" Foreground="Blue" FontSize="16">Confidencial</TextBlock>
+        <Polyline StrokeDashArray="1" Stroke="Black" Canvas.Top="100" StrokeThickness="2" Canvas.Left="100" Points="110,170 200,170" ></Polyline>
+        <Path Stroke="White" Canvas.Top="150" Canvas.Left="150" StrokeThickness="1"  Data="M185,165 185,179 198,179 198,165 185,165" Fill="White"></Path>
+    </Canvas>
+</Window>

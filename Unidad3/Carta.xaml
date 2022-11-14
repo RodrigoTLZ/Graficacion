@@ -1,0 +1,58 @@
+﻿<Window x:Class="Unidad3.Carta"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Unidad3"
+        mc:Ignorable="d"
+        Title="Carta" Height="450" Width="800">
+    <Canvas>
+        <Canvas Canvas.Left="-200" Canvas.Top="170">
+            <Canvas.RenderTransform>
+                <RotateTransform Angle="-20"></RotateTransform>
+            </Canvas.RenderTransform>
+            <Rectangle Fill="White" Stroke="Black" Canvas.Left="300" Canvas.Top="50" StrokeThickness="2" Width="200" Height="300"></Rectangle>
+            <Rectangle Fill="Green" Stroke="Black" Canvas.Left="310" Canvas.Top="60" StrokeThickness="1" Width="180" Height="280"></Rectangle>
+            <Path StrokeThickness="2" Data="M490 220 Q360,310 310,270 L310,180 M310 180 Q450,90 490,140 L490,220" Fill="White"></Path>
+            <Label FontSize="120" Foreground="Green" FontWeight="Bold"  Canvas.Left="360" Canvas.Top="110">1</Label>
+            <Label FontSize="30" Foreground="White" FontWeight="Bold" Canvas.Left="310" Canvas.Top="53">1</Label>
+            <Label FontSize="30" Foreground="White" FontWeight="Bold" Canvas.Left="490" Canvas.Top="345">1
+                <Label.RenderTransform>
+                    <ScaleTransform ScaleX="-1" ScaleY="-1"></ScaleTransform>
+                </Label.RenderTransform>
+            </Label>
+        </Canvas>
+        
+        <Canvas Canvas.Left="-120" Canvas.Top="40">
+            <Canvas.RenderTransform>
+                <RotateTransform Angle="-5"></RotateTransform>
+            </Canvas.RenderTransform>
+            <Rectangle Fill="White" Stroke="Black" Canvas.Left="300" Canvas.Top="50" StrokeThickness="2" Width="200" Height="300"></Rectangle>
+        <Rectangle Fill="Blue" Stroke="Black" Canvas.Left="310" Canvas.Top="60" StrokeThickness="1" Width="180" Height="280"></Rectangle>
+        <Path StrokeThickness="2" Data="M490 220 Q360,310 310,270 L310,180 M310 180 Q450,90 490,140 L490,220" Fill="White"></Path>
+        <Label FontSize="120" Foreground="Blue" FontWeight="Bold"  Canvas.Left="360" Canvas.Top="110">1</Label>
+        <Label FontSize="30" Foreground="White" FontWeight="Bold" Canvas.Left="310" Canvas.Top="53">1</Label>
+        <Label FontSize="30" Foreground="White" FontWeight="Bold" Canvas.Left="490" Canvas.Top="345">1
+            <Label.RenderTransform>
+                <ScaleTransform ScaleX="-1" ScaleY="-1"></ScaleTransform>
+            </Label.RenderTransform>
+        </Label>
+    </Canvas>
+
+        <Canvas Canvas.Left="-50" Canvas.Top="-25">
+            <Rectangle Fill="White" Stroke="Black" Canvas.Left="300" Canvas.Top="50" StrokeThickness="2" Width="200" Height="300"></Rectangle>
+            <Rectangle Fill="Red" Stroke="Black" Canvas.Left="310" Canvas.Top="60" StrokeThickness="1" Width="180" Height="280"></Rectangle>
+            <Path StrokeThickness="2" Data="M490 220 Q360,310 310,270 L310,180 M310 180 Q450,90 490,140 L490,220" Fill="White"></Path>
+            <Label FontSize="120" Foreground="Red" FontWeight="Bold"  Canvas.Left="360" Canvas.Top="110">1</Label>
+            <Label FontSize="30" Foreground="White" FontWeight="Bold" Canvas.Left="310" Canvas.Top="53">1</Label>
+            <Label FontSize="30" Foreground="White" FontWeight="Bold" Canvas.Left="490" Canvas.Top="345">1
+                <Label.RenderTransform>
+                    <ScaleTransform ScaleX="-1" ScaleY="-1"></ScaleTransform>
+                </Label.RenderTransform>
+            </Label>
+        </Canvas>
+
+
+
+    </Canvas>
+</Window>

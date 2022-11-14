@@ -1,0 +1,19 @@
+﻿<Window x:Class="_1Ejercicio.Polilinea"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_1Ejercicio"
+        mc:Ignorable="d"
+        Title="Polilinea" Height="450" Width="800">
+    <Canvas>
+        <Polyline  Stroke="Red" StrokeThickness="2" Points="5,5,105,5 105,105,5,105 5,5" Fill="Green" Opacity="10"></Polyline>
+
+        <Polyline Canvas.Top="50" Canvas.Left="200" Stroke="Red" StrokeThickness="2" Points="5,5,105,5 105,105,5,105 5,5" Fill="Yellow" Opacity="10"></Polyline>
+
+        <Polyline Canvas.Top="10" Canvas.Left="400" Stroke="Blue" StrokeStartLineCap="Triangle" StrokeEndLineCap="Round" StrokeThickness="5" StrokeLineJoin="Round" Points="5,5 105,5 105,105 5,105 5, 40 50,40"></Polyline>
+
+        <Polyline Canvas.Top="10" Canvas.Left="550" StrokeThickness="5" Stroke="Red" StrokeDashArray="2,3,1" Points="5,5 105,5 105,105 5,105 5,40 50,40"></Polyline>
+        
+    </Canvas>   
+</Window>
