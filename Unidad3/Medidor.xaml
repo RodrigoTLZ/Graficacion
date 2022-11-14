@@ -10,9 +10,9 @@
         <Ellipse  Fill="#234e79" Canvas.Left="250" Canvas.Top="50" Width="300" Height="300"></Ellipse>
         <Path Fill="White" Data="M500 267 A126,126 0 1 0 300,267z"></Path>
 
-        <Path  Data="M310,250 Q270,180 320,120 L345,135 Q300,200 340,240z" Fill="#39aea8"></Path>
-        <Path Fill="#ffce34" Data="M320,120 345,135 Q400,80 460,140 L480,120 Q400,40 320,120"></Path>
-        <Path Fill="#e9175e" Canvas.Left="800" Data="M310,250 Q270,180 320,120 L345,135 Q300,200 340,240Z">
+        <Path  Data="M310,250 Q270,180 320,120 L345,135 Q310,180 340,240z" Fill="#39aea8"></Path>
+        <Path Fill="#ffce34" Data="M320,120 345,135 Q410,85 460,140 L480,120 Q405,40 320,120"></Path>
+        <Path Fill="#e9175e" Canvas.Left="800" Data="M310,250 Q270,180 320,120 L340,140 Q310,180 340,240Z">
             <Path.RenderTransform>
                 <ScaleTransform ScaleX="-1" ScaleY="1"></ScaleTransform>
             </Path.RenderTransform>
