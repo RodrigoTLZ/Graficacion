@@ -1,0 +1,41 @@
+﻿<Window x:Class="Unidad4.PajaroBebedor"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Unidad4"
+        mc:Ignorable="d"
+        Title="PajaroBebedor" Height="750" Width="950">
+    <Canvas Margin="300">
+        <Path Stroke="Black" Fill="Yellow"  StrokeThickness="3" Data="M280,400 420,400 L420,285 M280,400 Q310,340 350,360 L350,285 L420,285"></Path>
+        <Path Stroke="Black" Fill="Red" StrokeThickness="3" Data="M420,285 Q460,180 410,100 Q375,60 345,120 Q310,210 350,285 L420,285"></Path>
+        <Canvas>
+            <Canvas.RenderTransform>
+                <RotateTransform CenterY="200" CenterX="350">
+                </RotateTransform>
+            </Canvas.RenderTransform>
+            <Canvas.Triggers>
+                <EventTrigger RoutedEvent="Loaded">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation Storyboard.TargetProperty="RenderTransform.(RotateTransform.Angle)" From="0" To="-40" Duration="0:0:3" AutoReverse="True" RepeatBehavior="Forever"></DoubleAnimation>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Canvas.Triggers>
+            <Path Stroke="Black" Fill="White" Canvas.Top="10" Canvas.Left="-20" StrokeThickness="3" Data="M430,190 220,-20 250,-50 450,150 Q550,130 600,215 Q630,290 570,310 Q440,320 430,190"></Path>
+
+            <Path Stroke="Black" StrokeThickness="3" Data="M200,-10 130,-90 160,-120 230,-40" Fill="Red"></Path>
+            <Path Stroke="Black" StrokeThickness="2"  Data="M40,-140 70,-90 -5,-75Z" Fill="Red"></Path>
+            <Ellipse Stroke="Black" StrokeThickness="3" Width="150" Height="150" Fill="Red" Canvas.Left="35" Canvas.Top="-220"></Ellipse>
+            
+            <Path Stroke="Black" StrokeThickness="3" Data="M35,-175 120,-230 115,-240 30,-185Z M35,-190 -10,-250 60,-300 105,-235 50,-200" Fill="Blue"></Path>
+            <Ellipse Width="50" Height="50" Stroke="Black" Canvas.Top="-180" Canvas.Left="50" StrokeThickness="2" Fill="White"></Ellipse>
+            <Ellipse Width="20" Height="20" Stroke="Black" Canvas.Top="-158" Canvas.Left="64" StrokeThickness="2" Fill="Black"></Ellipse>
+        </Canvas>
+        <Canvas Canvas.Left="-10" Canvas.Top="10">
+            <Path Stroke="Black" Fill="Yellow"  StrokeThickness="3" Data="M280,400 420,400 L420,285 M280,400 Q310,340 350,360 L350,285 L420,285"></Path>
+            <Path Stroke="Black" Fill="Red" StrokeThickness="3" Data="M420,285 Q460,180 410,100 Q375,60 345,120 Q310,210 350,285 L420,285"></Path>
+        </Canvas>
+    </Canvas>
+</Window>

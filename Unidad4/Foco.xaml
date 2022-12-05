@@ -1,0 +1,26 @@
+﻿<Window x:Class="Unidad4.Foco"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Unidad4"
+        mc:Ignorable="d"
+        Title="Foco" Height="450" Width="800">
+    <Canvas>
+        <Path Stroke="Black" StrokeThickness="7" Data="M340,255 340,240 A100,100 0 1 1 425,240 L425,255"></Path>
+
+        <Path Stroke="Black" Fill="gold" StrokeThickness="7" Data="M340,255 340,240 A100,100 0 1 1 425,240 L425,255">
+            <Path.Triggers>
+                <EventTrigger RoutedEvent="Path.Loaded">
+                    <BeginStoryboard>
+                        <Storyboard>
+                            <DoubleAnimation Storyboard.TargetProperty="Opacity" From="1.0" To="0.0" Duration="0:0:3" AutoReverse="True" RepeatBehavior="Forever"></DoubleAnimation>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Path.Triggers>
+        </Path>
+        <Path Stroke="Black" StrokeThickness="7" Fill="Gray" Data="M350,350 400,350 Q425,350 425,345 L425,330 340,330 340,340 Q340,350 350,350 M340,330 340,330 Q320,330 320,310 L320,280 Q320,255 340,255 L415,255 Q445,255 445,275 L445,310 Q445,330 425,330 M340,255"></Path>
+        <Path Stroke="Black" StrokeThickness="7" Data="M365,255 365,160 Q380,190 400,160 Q400,200 400,255"></Path>
+    </Canvas>
+</Window>
