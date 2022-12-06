@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Unidad4"
         mc:Ignorable="d"
         Title="Elipse" Height="450" Width="800">
-    <Canvas Background="Blue" Name="cnvElipses" MouseDown="cnvElipses_MouseDown">
+    <Canvas Background="Blue" Name="cnvElipses" MouseDown="cnvElipses_MouseDown" SizeChanged="cnvElipses_SizeChanged">
         
     </Canvas>
 </Window>

@@ -25,11 +25,12 @@ namespace Unidad4
             InitializeComponent();
         }
 
+        Ellipse elipse;
         private void cnvElipses_MouseDown(object sender, MouseButtonEventArgs e)
         {
             Point posicion = e.GetPosition(cnvElipses);
             Random r = new Random();
-            Ellipse elipse = new Ellipse
+            elipse = new Ellipse
             {
                 Width = 30,
                 Height = 30,
@@ -54,6 +55,55 @@ namespace Unidad4
             };
 
             elipse.BeginAnimation(Canvas.TopProperty, animacion);
+        }
+
+        private void cnvElipses_SizeChanged(object sender, SizeChangedEventArgs e)
+        {
+          if(elipse != null)
+          {
+            if (e.HeightChanged && cnvElipses.ActualHeight > e.PreviousSize.Height)
+            {
+                DoubleAnimation animacion = new DoubleAnimation
+                {
+                    To = cnvElipses.ActualHeight - elipse.Height,
+                    BeginTime = TimeSpan.FromSeconds(0),
+                    Duration = TimeSpan.FromSeconds(2),
+                    EasingFunction = new BounceEase
+                    {
+                        Bounces = 5,
+                        EasingMode = EasingMode.EaseOut
+                    }
+
+                };
+
+                foreach (var el in cnvElipses.Children)
+                {
+                    if(el is Ellipse)
+                    {
+                        ((Ellipse)el).BeginAnimation(Canvas.TopProperty, animacion);
+                    }
+                }
+            }
+
+             if(e.HeightChanged&& cnvElipses.ActualHeight < e.PreviousSize.Height)
+                {
+                    DoubleAnimation animacion = new DoubleAnimation
+                    {
+                        To = cnvElipses.ActualHeight - elipse.Height,
+                        BeginTime = TimeSpan.FromSeconds(0),
+                        Duration = TimeSpan.FromSeconds(0)
+                    };
+
+                    foreach (var el in cnvElipses.Children)
+                    {
+                        if (el is Ellipse)
+                        {
+                            ((Ellipse)el).BeginAnimation(Canvas.TopProperty, animacion);
+                        }
+                    }
+
+                }
+          }
         }
     }
 }
