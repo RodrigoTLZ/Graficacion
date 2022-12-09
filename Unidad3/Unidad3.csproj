@@ -7,4 +7,8 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Unidad4\Unidad4.csproj" />
+  </ItemGroup>
+
 </Project>
